@@ -1,0 +1,26 @@
+# Python 3.11.X
+# Currently use CUDA 12.1 with PyTorch 2.3.1(< 2.4.0) is fine.
+
+pip install --upgrade wheel
+
+pip install mmpose
+pip install mmdet
+
+# 法一
+pip install openmim
+mim install mmcv
+
+# 法二 (記得調 cuda version, torch version)
+pip install mmcv==2.2.0 -f https://download.openmmlab.com/mmcv/dist/cu121/torch2.3/index.html
+
+# mmcv=2.2.0 跟 mmdet 不相容，有人說：
+I changed "mmdet/init.py" line9 "2.2.0" to "2.2.1" to forcely make it compatible.
+The demo code is ok.
+but I don't know whether such a modification will cause other incompatibility issues.
+
+# 剩下的 warnings 就不理他了，可以 work 就好了。
+
+# For visualization examples
+pip install mayavi
+pip install configobj
+pip install pyqt6

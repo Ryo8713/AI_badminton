@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: ai-badminton
+Version: 0.0.1
+Summary: ai-badminton: A python package for automated badminton video annotation
+Home-page: https://git.corp.adobe.com/adobe-research/ai-badminton
+Author: Paul Liu and Jui-Hsien Wang
+Author-email: paliu@adobe.com
+Project-URL: Bug Reports, https://git.corp.adobe.com/adobe-research/ai-badminton/issues
+Project-URL: Source, https://git.corp.adobe.com/adobe-research/ai-badminton
+Keywords: badminton,computer vision,setuptools,development
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Requires-Dist: tensorflow
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == "dev"
+Provides-Extra: test
+Requires-Dist: coverage; extra == "test"
+
+# `ai-badminton`: A python package for automated processing of badminton videos
+
+This is a package containing commonly used tools for the ai-badminton project. Contents currently include:
+
+- Classes for Court and Pose processing
+- Homography code for identifying court lines from 4 points
+- Model loaders / wrappers for hit detection, pose tracking, and shot tracking
+- Pipelines for processing pose / shot / hit data for input videos
+- A framework and UI for shot searching
+
+![Lazy Package Logo](./lazy_logo.png)
+
+----
+
+# How to use
+
+Coming soon!
