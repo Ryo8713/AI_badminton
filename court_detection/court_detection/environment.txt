@@ -1,0 +1,7 @@
+去 OpenCV 官網下載 OpenCV 放到 driver C
+新增系統環境變數 C:\OpenCV\build\x64\vcXX\bin
+
+在 Visual Studio 設定專案屬性
+1. VC++ -> include：新增 C:\OpenCV\build\include
+2. VC++ -> lib：新增 C:\OpenCV\build\x64\vcXX\lib
+3. 連結器 -> 輸入 -> 其他相依性：新增 opencv_worldXXXXd.lib
